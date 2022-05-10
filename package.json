@@ -1,0 +1,28 @@
+{
+  "name": "db_with_node",
+  "version": "1.0.0",
+  "description": "Conexión a base de datos con javascript",
+  "main": "app.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "knex": "^2.0.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wazowski19/db_with_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wazowski19/db_with_node/issues"
+  },
+  "homepage": "https://github.com/Wazowski19/db_with_node#readme"
+}
