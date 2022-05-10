@@ -10,7 +10,7 @@ console.log(process.env.DB_HOST,
     process.env.DB_NAME
     )
 
-/* knex({
+const connection = knex({
     client: 'pg',
     connection: {
         host: process.env.DB_HOST,
@@ -19,4 +19,12 @@ console.log(process.env.DB_HOST,
         password: process.env.DB_PASS,
         database: process.env.DB_NAME
     }
-}); */
+});
+
+const query = connection('film').where('release_year', 2006);
+
+query.then((rows) =>{
+    console.log(rows)
+});
+
+query.then(console.log)
